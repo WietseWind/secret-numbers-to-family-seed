@@ -16,7 +16,7 @@ compromised device, you are at risk of LOSING ALL YOUR FUNDS.
 
 ## Please note that the best way to run this, is by getting the source, installing the dependencies (see "Compile" below) and run this offline on your own device.
 
-- Release (download and run offline): https://github.com/WietseWind/secret-nubmers-to-family-seed/releases
+- Release (download and run offline): https://github.com/WietseWind/secret-numbers-to-family-seed/releases
 
 ## Run for development
 ```

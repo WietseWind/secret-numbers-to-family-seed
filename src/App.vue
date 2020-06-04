@@ -14,8 +14,8 @@
       <div class="text-center">
         By <a class="btn btn-primary btn-sm py-1" href="https://twitter.com/WietseWind" target="_blank"><b>@WietseWind</b></a>
         <span class="d-print-none">
-          - <a class="btn btn-primary btn-sm py-1" href="https://github.com/WietseWind/secret-nubmers-to-family-seed/releases" target="_blank"><b>Download (Github)</b></a>
-          - <a class="btn btn-outline-primary btn-sm py-1" href="https://github.com/WietseWind/secret-nubmers-to-family-seed" target="_blank"><b>Source code (Github)</b></a>
+          - <a class="btn btn-primary btn-sm py-1" href="https://github.com/WietseWind/secret-numbers-to-family-seed/releases" target="_blank"><b>Download (Github)</b></a>
+          - <a class="btn btn-outline-primary btn-sm py-1" href="https://github.com/WietseWind/secret-numbers-to-family-seed" target="_blank"><b>Source code (Github)</b></a>
         </span>
       </div>
     </div>
