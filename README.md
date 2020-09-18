@@ -7,6 +7,8 @@ By [Wietse Wind](https://wietse.com)
 If you want to send me a sip with your newly generated & activated account:
   - `rwietsevLFg8XSmG3bEZzFein1g8RBqWDZ`
 
+Live version: https://secret-numbers-to-family-seed.xumm.dev
+
 # WARNING
 
 If you generated your Secret Numbers in a secure client like XUMM, converting your Secret Numbers to
