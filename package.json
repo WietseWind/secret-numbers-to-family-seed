@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "ripple-keypairs": "^1.0.0",
+    "ripple-keypairs": "^1.0.3",
     "vue": "^2.6.11",
     "vue-clipboard2": "^0.3.1",
-    "xrpl-secret-numbers": "^0.3.1"
+    "xrpl-secret-numbers": "^0.3.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
