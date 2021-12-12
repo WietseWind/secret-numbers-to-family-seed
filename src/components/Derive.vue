@@ -12,7 +12,8 @@
     <div class="text-center" v-show="familySeed.slice(0, 1) !== 'X'">
       <b>Account address (public)</b>
       <br />
-      <code class="generated font-weight-bold px-2 text-primary d-inline-block mb-2" v-clipboard:copy="'Account: ' + account">{{ account }}</code>
+      <code class="generated h6 font-weight-bold px-2 text-primary d-inline-block mb-2" v-clipboard:copy="'Account: ' + account">{{ account }}</code>
+      <br />
       <br />
       <b>Account secret (for your eyes only)</b>
       <br />
@@ -22,6 +23,10 @@
         <code class="generated px-2 text-danger d-inline-block mb-2" v-clipboard:copy="'Family Seed Secret (keep safe!): ' + familySeed">
           {{ familySeed }}
         </code>
+        <small class="d-block mt-3"><b class="text-muted">Raw secp256k1 HEX private key</b></small>
+        <small><small><small><code class="generated px-2 text-muted d-inline-block mb-2" v-clipboard:copy="'Raw (secp256k1) secret Key (keep safe!): ' + hexSecret">
+          {{ hexSecret }}
+        </code></small></small></small>
       </small>
     </div>
     <div class="mt-4 text-center d-print-none" v-show="familySeed.slice(0, 1) !== 'X'">
@@ -53,6 +58,7 @@ export default {
       const account = new Account(this.secret)
       this.account = account.account.address
       this.familySeed = account.account.familySeed
+      this.hexSecret = account.account.keypair.privateKey
     }
   },
   watch: {
@@ -62,6 +68,7 @@ export default {
       } else {
         this.account = 'XXXXXXXXXXXXXXXXXXXXXXXXXXX'
         this.familySeed = 'XXXXXXXXXXXXXXXXXXXXXXXXXXX'
+        this.hexSecret = 'X'.repeat('66')
       }
     }
   },
@@ -69,7 +76,8 @@ export default {
     return {
       account: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
       secret: ['', '', '', '', '', '', '', ''],
-      familySeed: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX'
+      familySeed: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+      hexSecret: 'X'.repeat('66')
     }
   },
   computed: {
