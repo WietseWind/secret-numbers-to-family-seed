@@ -23,8 +23,8 @@
         <code class="generated px-2 text-danger d-inline-block mb-2" v-clipboard:copy="'Family Seed Secret (keep safe!): ' + familySeed">
           {{ familySeed }}
         </code>
-        <small class="d-block mt-3"><b class="text-muted">Raw secp256k1 HEX private key</b></small>
-        <small><small><small><code class="generated px-2 text-muted d-inline-block mb-2" v-clipboard:copy="'Raw (secp256k1) secret Key (keep safe!): ' + hexSecret">
+        <small class="d-block mt-3"><b class="text-muted">Raw HEX private key</b></small>
+        <small><small><small><code class="generated px-2 text-muted d-inline-block mb-2" v-clipboard:copy="'Raw private key (keep safe!): ' + hexSecret">
           {{ hexSecret }}
         </code></small></small></small>
       </small>
